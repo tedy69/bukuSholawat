@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmenu"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/tombolSholawat"
+    android:onClick="teksSholawat"
+    android:layout_width="270dp"
+    android:layout_height="60dp"
+    android:background="@drawable/bgtombol"
+    android:text="Teks Sholawat"
+    android:textSize="20sp"
+    android:textColor="@color/colorTeksTombol"
+    app:layout_constraintBottom_toTopOf="@id/tombolFavorit"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginBottom="40dp"/>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/tombolFavorit"
+    android:onClick="masukMenuFavorit"
+    android:layout_width="270dp"
+    android:layout_height="60dp"
+    android:background="@drawable/bgtombol"
+    android:text="Favorit"
+    android:textSize="20sp"
+    android:textColor="@color/colorTeksTombol"
+    app:layout_constraintBottom_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombolUpload"
+        android:onClick="tombolUpload"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bgtombol"
+        android:text="Upload Lafadz"
+        android:textColor="@color/colorTeksTombol"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombolFavorit"
+        android:layout_marginTop="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
